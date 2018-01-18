@@ -6,7 +6,7 @@ files.forEach((file) => {
   if (file === 'index.js' || (/^\./g).test(file)) {
     return;
   } else {
-    routes = routes.concat(require(`./${file.replace(/\.js$/g, '')}`));
+    routes = routes.concat(require(`./${file.replace(/\.js$/g, '')}`).default);
   }
 });
 export default routes;

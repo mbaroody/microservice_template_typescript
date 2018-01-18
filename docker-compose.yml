@@ -11,7 +11,7 @@ services:
       - "PORT=80"
     ports:
       - 80:80
-    command: ["npm", "run", "app"]
+    command: ["npm", "start"]
   test:
     tty: true
     build:

@@ -1,5 +1,5 @@
 import HealthcheckHandler from '../handlers/healthcheck';
-import Logger from '../common/logger/index';
+import Logger from '../common/logger';
 
 const healthcheckHandler = new HealthcheckHandler(Logger);
 

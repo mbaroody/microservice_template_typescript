@@ -2,11 +2,11 @@
   "name": "microservice_template",
   "version": "1.0.0",
   "description": "",
-  "main": "dist/server.js",
   "engine": {
     "node": "8.9.3"
   },
   "scripts": {
+    "start": "node dist/server.js",
     "tsc": "tsc",
     "test": "mocha --recursive './**/*.spec.js' './*.spec.js'"
   },
@@ -20,7 +20,6 @@
   },
   "devDependencies": {
     "@types/node": "*",
-    "@types/hapi": "*",
     "@types/joi": "*",
     "@types/winston": "*",
     "typescript": "^2.6.2",

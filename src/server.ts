@@ -2,6 +2,7 @@ import * as Hapi from 'hapi';
 import * as HapiSwagger from 'hapi-swagger';
 import Logger from './common/logger';
 import routes from './routes';
+console.log('fuckkkkkkkkkkkkkkkkkkkk: ', routes);
 
 export default (async () => {
   const server = await new Hapi.Server({
