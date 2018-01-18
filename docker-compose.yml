@@ -1,0 +1,26 @@
+version: '2'
+services:
+  app:
+    tty: true
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    environment:
+      - "NODE_ENV=production"
+      - "HOST=0.0.0.0"
+      - "PORT=80"
+    ports:
+      - 80:80
+    command: ["npm", "run", "app"]
+  test:
+    tty: true
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    environment:
+      - "NODE_ENV=testing"
+      - "HOST=0.0.0.0"
+      - "PORT=3000"
+    ports:
+      - 3000:3000
+    command: ["npm", "run", "test"]

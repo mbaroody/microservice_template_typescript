@@ -1,0 +1,32 @@
+{
+  "name": "microservice_template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/server.js",
+  "engine": {
+    "node": "8.9.3"
+  },
+  "scripts": {
+    "tsc": "tsc",
+    "test": "mocha --recursive './**/*.spec.js' './*.spec.js'"
+  },
+  "author": "Accenture",
+  "license": "ISC",
+  "dependencies": {
+    "hapi": "^17.2.0",
+    "hapi-swagger": "^9.0.0",
+    "joi": "^13.0.2",
+    "winston": "^2.4.0"
+  },
+  "devDependencies": {
+    "@types/node": "*",
+    "@types/hapi": "*",
+    "@types/joi": "*",
+    "@types/winston": "*",
+    "typescript": "^2.6.2",
+    "chai": "^4.1.2",
+    "mocha": "^4.0.1",
+    "sinon": "^4.0.2",
+    "tslint": "^5.8.0"
+  }
+}
